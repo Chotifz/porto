@@ -1,0 +1,116 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 10;
+    transition: var(--transition);
+   }
+   
+   .navbar.light {
+    background-color: rgba(248, 249, 250, 0.925);
+    backdrop-filter: blur(10px);
+   }
+   
+   .navbar.dark {
+    background-color: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(10px);
+   }
+   
+   .navbar.scrolled {
+    padding: 15px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+   }
+   
+   .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+   
+   .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--light-primary);
+    cursor: pointer;
+   }
+   
+   .dark .logo {
+    color: var(--dark-primary);
+   }
+   
+   .nav-links {
+    display: flex;
+    gap: 30px;
+   }
+   
+   .nav-links a {
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+   }
+   
+   .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--light-primary);
+    transition: var(--transition);
+   }
+   
+   .dark .nav-links a::after {
+    background-color: var(--dark-primary);
+   }
+   
+   .nav-links a:hover::after {
+    width: 100%;
+   }
+   
+   .mobile-menu-button {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+   }
+   
+   @media (max-width: 768px) {
+    .mobile-menu-button {
+      display: block;
+    }
+   
+    .nav-links {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: var(--light-bg);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: var(--transition);
+      z-index: 1001;
+    }
+   
+    .dark .nav-links {
+      background-color: var(--dark-bg);
+    }
+   
+    .nav-links.active {
+      right: 0;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+   
+    .nav-links a {
+      margin: 15px 0;
+      font-size: 1.2rem;
+    }
+   }
+   
