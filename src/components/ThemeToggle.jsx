@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaSun, FaMoon } from 'react-icons/fa';
-
+import './css/ThemeToggle.css';
 
 const ThemeToggle = ({ theme, toggleTheme }) => {
  return (

@@ -1,4 +1,3 @@
-// components/Skills.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -7,9 +6,10 @@ import {
 } from 'react-icons/fa';
 import { 
   SiJavascript, SiTypescript, SiNextdotjs, SiMongodb, SiExpress, 
-  SiTailwindcss, SiRedux, SiFirebase
+  SiTailwindcss, SiRedux, SiFirebase,
+  SiMysql
 } from 'react-icons/si';
-import './Skills.css';
+import './css/Skills.css';
 
 const Skills = ({ theme }) => {
   const [ref, inView] = useInView({
@@ -36,7 +36,7 @@ const Skills = ({ theme }) => {
     { name: 'React', icon: <FaReact />, level: 85 },
     { name: 'Next.js', icon: <SiNextdotjs />, level: 80 },
     { name: 'JavaScript', icon: <SiJavascript />, level: 90 },
-    { name: 'TypeScript', icon: <SiTypescript />, level: 75 },
+    { name: 'TypeScript', icon: <SiTypescript />, level: 65 },
     { name: 'Node.js', icon: <FaNodeJs />, level: 80 },
     { name: 'Express', icon: <SiExpress />, level: 85 },
     { name: 'MongoDB', icon: <SiMongodb />, level: 80 },
@@ -47,7 +47,8 @@ const Skills = ({ theme }) => {
     { name: 'Git', icon: <FaGitAlt />, level: 85 },
     { name: 'GitHub', icon: <FaGithub />, level: 90 },
     { name: 'npm', icon: <FaNpm />, level: 85 },
-    { name: 'Firebase', icon: <SiFirebase />, level: 70 },
+    // { name: 'MySQL', icon: <SiMysql />, level: 65 },
+   
   ];
 
   return (

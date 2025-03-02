@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import './Projects.css';
+import './css/Projects.css';
 
 const Projects = ({ theme }) => {
   const [ref, inView] = useInView({
@@ -13,57 +13,57 @@ const Projects = ({ theme }) => {
 
   const [activeTab, setActiveTab] = useState('all');
 
-  // Replace with your actual projects
+ 
   const projectsData = [
     {
       id: 1,
       title: 'Modern E-commerce Platform',
       description: 'A full-featured e-commerce platform built with Next.js, MongoDB, and Stripe integration.',
-      image: '/project1.jpg',
-      categories: ['web', 'frontend', 'backend'],
-      technologies: ['Next.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-      githubLink: 'https://github.com/Chotifz/project1',
-      liveLink: 'https://project1.demo.com',
+      image: 'porto/tifzy-collections.png',
+      categories: ['web', 'frontend', 'backend', 'api'],
+      technologies: ['Next.js', 'MongoDB', 'Redux Toolkit',  'Tailwind CSS'],
+      githubLink: 'https://github.com/Chotifz/tifzy-collections',
+      liveLink: 'https://tifzy-collections.vercel.app/',
     },
     {
       id: 2,
-      title: 'Task Management Dashboard',
-      description: 'A responsive task management application with drag-and-drop UI and real-time updates.',
-      image: '/project2.jpg',
+      title: 'Courses harisenin x cakap project',
+      description: 'A responsive web courses application.',
+      image: 'porto//cakapxhr.png',
       categories: ['web', 'frontend'],
-      technologies: ['React', 'Redux', 'Firebase', 'Material UI'],
-      githubLink: 'https://github.com/Chotifz/project2',
-      liveLink: 'https://project2.demo.com',
+      technologies: ['React', 'Shadcn'],
+      githubLink:'https://github.com/Chotifz/cakapxharisenin',
+      liveLink: 'https://cakapxharisenin.vercel.app',
     },
     {
       id: 3,
-      title: 'Blog API',
-      description: 'RESTful API for a blog platform with user authentication and content management.',
-      image: '/project3.jpg',
-      categories: ['backend', 'api'],
-      technologies: ['Node.js', 'Express', 'MongoDB', 'JWT'],
-      githubLink: 'https://github.com/Chotifz/project3',
-      liveLink: 'https://project3.demo.com',
+      title: 'Consume API',
+      description: 'Crud api test',
+      image: 'porto/crud.png',
+      categories: ['frontend', ],
+      technologies: ['Tailwind CSS', 'React',],
+      githubLink: 'https://github.com/Chotifz/harisenin-fetchapi',
+      liveLink: 'https://harisenin-fetchapi.vercel.app/',
     },
     {
       id: 4,
       title: 'Weather App',
       description: 'A weather application that displays current and forecasted weather data for any location.',
-      image: '/project4.jpg',
+      image: 'porto/project-1.png',
       categories: ['web', 'frontend'],
-      technologies: ['React', 'OpenWeather API', 'Styled Components'],
-      githubLink: 'https://github.com/Chotifz/project4',
-      liveLink: 'https://project4.demo.com',
+      technologies: ['React', 'Landing Page', 'Styled Components'],
+      githubLink: 'https://github.com/Chotifz',
+      liveLink: 'https://hadar-karya-utama.vercel.app',
     },
     {
       id: 5,
       title: 'Portfolio Website',
       description: 'A personal portfolio website showcasing my projects and skills.',
-      image: '/project5.jpg',
+      image: 'porto/portfolio.png',
       categories: ['web', 'frontend'],
       technologies: ['React', 'Framer Motion', 'Tailwind CSS'],
-      githubLink: 'https://github.com/Chotifz/portfolio',
-      liveLink: 'https://portfolio.demo.com',
+      githubLink: 'https://github.com/Chotifz/porto',
+      liveLink: 'https://chotifz.github.io/porto/',
     },
   ];
 
@@ -146,9 +146,8 @@ const Projects = ({ theme }) => {
                 }}
               >
                 <div className="project-image">
-                  {/* Replace with actual image */}
                   <div className="project-placeholder">
-                    <span>{project.title.charAt(0)}{project.title.split(' ')[1]?.charAt(0)}</span>
+                    <img src={project.image} alt="project-image" />
                   </div>
                   <div className="project-overlay">
                     <div className="project-links">

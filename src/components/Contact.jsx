@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
-import './Contact.css';
+import './css/Contact.css';
 
 const Contact = ({ theme }) => {
   const [ref, inView] = useInView({

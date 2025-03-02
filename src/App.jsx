@@ -12,17 +12,16 @@ import ThemeToggle from './components/ThemeToggle';
 import './App.css';
 
 const App = () => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading
+    
     setTimeout(() => {
       setIsLoading(false);
     }, 1500);
 
-    // Check for saved theme
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     setTheme(savedTheme);
     document.body.className = savedTheme;
   }, []);
@@ -44,7 +43,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <Router basename='/porto'>
       <div className={`app ${theme}`}>
         <Navbar theme={theme} />
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />

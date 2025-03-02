@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Definitions for gradients and effects -->
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2A0845" />
+      <stop offset="100%" stop-color="#43146F" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9370DB" />
+      <stop offset="100%" stop-color="#A586E5" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background with subtle texture -->
+  <rect x="0" y="0" width="300" height="300" fill="#E8E1F0" />
+  <pattern id="pattern" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="10" height="10" fill="#DFD6E8"/>
+  </pattern>
+  <rect x="0" y="0" width="300" height="300" fill="url(#pattern)" opacity="0.5" />
+  
+  <!-- Main T shape (dark) -->
+  <path d="M75 75 
+           L225 75 
+           L225 115
+           L170 115
+           L170 225
+           L130 225
+           L130 115
+           L75 115
+           Z" 
+        fill="url(#mainGradient)" />
+  
+  <!-- Front T shape (elegant white/light) - offset slightly -->
+  <path d="M90 60 
+           L240 60 
+           L240 100
+           L185 100
+           L185 210
+           L145 210
+           L145 100
+           L90 100
+           Z" 
+        fill="url(#accentGradient)" 
+        filter="url(#shadow)" />
+  
+  <!-- Refined aesthetic elements -->
+  <line x1="145" y1="125" x2="185" y2="125" stroke="#2A0845" stroke-width="1" opacity="0.2" />
+  <line x1="145" y1="150" x2="185" y2="150" stroke="#2A0845" stroke-width="1" opacity="0.2" />
+  <line x1="145" y1="175" x2="185" y2="175" stroke="#2A0845" stroke-width="1" opacity="0.2" />
+  
+  <!-- Subtle decorative accents -->
+  <circle cx="165" cy="50" r="5" fill="#2A0845" opacity="0.2" />
+  <circle cx="240" cy="170" r="8" fill="#2A0845" opacity="0.1" />
+  <circle cx="60" cy="170" r="8" fill="#2A0845" opacity="0.1" />
+  
+  <!-- Elegant corner detail -->
+  <path d="M255 225 L240 225 L240 210" fill="none" stroke="#2A0845" stroke-width="2" opacity="0.4" />
+  <path d="M45 75 L60 75 L60 90" fill="none" stroke="#2A0845" stroke-width="2" opacity="0.4" />
+</svg>

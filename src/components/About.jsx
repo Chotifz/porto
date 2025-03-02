@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import './About.css';
+import './css/About.css';
 
 const About = ({ theme }) => {
   const [ref, inView] = useInView({
@@ -38,9 +38,9 @@ const About = ({ theme }) => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="image-frame">
-              {/* Replace with your actual image */}
+             
               <div className="about-placeholder">
-                <span>HK</span>
+               <img src="porto/c.jpg" alt="profile-image" />
               </div>
             </div>
           </motion.div>
@@ -52,9 +52,9 @@ const About = ({ theme }) => {
             animate={inView ? "visible" : "hidden"}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <h3>Who am I?</h3>
+            <h3 className='font-mono'>Who am I?</h3>
             <p>
-              I'm Husnul Khotib, a passionate Full Stack Developer with a year of intensive self-learning and bootcamp experience. I'm dedicated to creating efficient, scalable, and user-friendly web applications.
+              I'm Khotif, a passionate Full Stack Developer with a year of intensive self-learning and bootcamp experience. I'm dedicated to creating efficient, scalable, and user-friendly web applications.
             </p>
             <p>
               Although I'm new to the professional development scene, I've built 4-5 projects ranging from beginner to intermediate levels, focusing on modern web technologies including React, Next.js, Express, and MongoDB.
@@ -65,16 +65,16 @@ const About = ({ theme }) => {
             
             <div className="about-details">
               <div className="detail">
-                <span className="label">Name:</span>
+                <span className="label">Full Name:</span>
                 <span className="value">Husnul Khotib</span>
               </div>
               <div className="detail">
                 <span className="label">Email:</span>
-                <span className="value">khotib.husnul@gmail.com</span>
+                <span className="value">chotife@gmail.com</span>
               </div>
               <div className="detail">
                 <span className="label">From:</span>
-                <span className="value">Indonesia</span>
+                <span className="value">Lampung - Indonesia</span>
               </div>
               <div className="detail">
                 <span className="label">Experience:</span>
@@ -83,7 +83,7 @@ const About = ({ theme }) => {
             </div>
             
             <motion.a 
-              href="/resume.pdf" 
+              href="https://drive.google.com/file/d/1Mc2fsJ3P1zeyaEGoUadGPN14fOyA5WDq/view?usp=drive_link" 
               className="btn btn-primary"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

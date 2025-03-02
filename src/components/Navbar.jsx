@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
+import './css/Navbar.css';
 import { BiHomeHeart } from 'react-icons/bi';
 
 const Navbar = ({ theme }) => {
