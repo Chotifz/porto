@@ -110,7 +110,7 @@ const Hero = ({ theme }) => {
             <div className="image-container">
               {/* Replace with your actual image */}
               <div className="profile-placeholder">
-                <img src="porto/image-1.jpg" alt="image-profile" />
+                <img src="image-1.jpg" alt="image-profile" />
               </div>
             </div>
             <div className="blob"></div>

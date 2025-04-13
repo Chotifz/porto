@@ -40,7 +40,7 @@ const About = ({ theme }) => {
             <div className="image-frame">
              
               <div className="about-placeholder">
-               <img src="porto/c.jpg" alt="profile-image" />
+               <img src="c.jpg" alt="profile-image" />
               </div>
             </div>
           </motion.div>

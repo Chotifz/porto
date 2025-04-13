@@ -2,12 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
-  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaNpm
+  FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaNpm,
+  FaDocker
 } from 'react-icons/fa';
 import { 
   SiJavascript, SiTypescript, SiNextdotjs, SiMongodb, SiExpress, 
   SiTailwindcss, SiRedux, SiFirebase,
-  SiMysql
+  SiMysql,
+  SiPostgresql
 } from 'react-icons/si';
 import './css/Skills.css';
 
@@ -35,17 +37,19 @@ const Skills = ({ theme }) => {
   const skills = [
     { name: 'React', icon: <FaReact />, level: 85 },
     { name: 'Next.js', icon: <SiNextdotjs />, level: 80 },
-    { name: 'JavaScript', icon: <SiJavascript />, level: 90 },
+    { name: 'JavaScript', icon: <SiJavascript />, level: 85 },
     { name: 'TypeScript', icon: <SiTypescript />, level: 65 },
     { name: 'Node.js', icon: <FaNodeJs />, level: 80 },
-    { name: 'Express', icon: <SiExpress />, level: 85 },
-    { name: 'MongoDB', icon: <SiMongodb />, level: 80 },
-    { name: 'HTML5', icon: <FaHtml5 />, level: 95 },
-    { name: 'CSS3', icon: <FaCss3Alt />, level: 90 },
+    { name: 'Docker', icon: <FaDocker />, level: 70 },
+    { name: 'Express', icon: <SiExpress />, level: 80 },
+    {name: 'PostgreeSQL', icon: <SiPostgresql />, level:75},
+    { name: 'MongoDB', icon: <SiMongodb />, level: 75 },
+    { name: 'HTML5', icon: <FaHtml5 />, level: 90 },
+    { name: 'CSS3', icon: <FaCss3Alt />, level: 85 },
     { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 85 },
-    { name: 'Redux', icon: <SiRedux />, level: 75 },
+    { name: 'Redux', icon: <SiRedux />, level: 70 },
     { name: 'Git', icon: <FaGitAlt />, level: 85 },
-    { name: 'GitHub', icon: <FaGithub />, level: 90 },
+    { name: 'GitHub', icon: <FaGithub />, level: 85 },
     { name: 'npm', icon: <FaNpm />, level: 85 },
     // { name: 'MySQL', icon: <SiMysql />, level: 65 },
    

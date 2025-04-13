@@ -20,7 +20,7 @@ const Footer = ({ theme }) => {
            <a href="https://www.linkedin.com/in/husnul-khotib/" target="_blank" rel="noopener noreferrer">
              <FaLinkedin />
            </a>
-           <a href="mailto:khotib.husnul@gmail.com">
+           <a href="mailto:chotife@gmail.com">
              <FaEnvelope />
            </a>
          </div>
